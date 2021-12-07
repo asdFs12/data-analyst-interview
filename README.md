@@ -22,3 +22,11 @@ repay_willingness(还款意愿)
 
 要求：使用任意你熟悉的工具做分析,提交你的分析代码(python/sql/r/excel)、分析结果。
 注意：这是一份有随机成分的数据。请暂时忽略其中西班牙文显示的重音符号
+
+
+FAQ:
+
+ - 我可以上网吗？－－ 可以，make yourself comfortable。
+ - 我可以问别人吗？ －－ 请独立完成，if you lie , we'll know sooner or later。
+ - 我超过120分钟怎么办？请尽量按时提交。如果超过120分钟，请标注下完成用时。
+ - 我做不完怎么办？没关系请尽量按点顺序完成。
