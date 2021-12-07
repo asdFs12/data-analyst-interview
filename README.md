@@ -20,7 +20,7 @@ contact_status(联系状态)，
 repay_willingness(还款意愿)
 
 
-要求：使用任意你熟悉的工具做分析,提交你的分析代码(python/sql/r/excel)、分析结果。
+要求：使用任意你熟悉的工具做分析,提交你的分析代码(python/sql/r/excel ...)、分析结果(notebook or word ...)。
 注意：这是一份有随机成分的数据。请暂时忽略其中西班牙文显示的重音符号
 
 
