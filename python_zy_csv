@@ -1,0 +1,35 @@
+# -*- coding:utf-8 -*-
+import csv
+'''
+方向可以自定（例子: 催回效果，催收工作量，分布情况）
+id,
+collect_case_id(分配的caseid), 
+can_recall_time(可以再次拨打的时间点),
+collect_amount(催回金额)，
+repaid_amount(客户还款金额)，
+remark(催收员的编写的备注。西班牙文), 
+repaid_time(还款时间)， 
+collector_id(催收员id)，
+collection_time(催收员工作的)，
+contact_relation（联系的是谁（类别）），
+contact_status(联系状态)， 
+repay_willingness(还款意愿)
+'''
+with open('./data-analyst-interview-main/assignment.csv', 'r', encoding='utf-8') as rf:
+    # 创建csv对象 用字典方式读取方便后续操作
+    r_csv = csv.DictReader(rf)
+    #读取内容写入列表
+    lis = [i for i in r_csv]
+#有几条数据
+print('催收工作量:',len(lis))
+#客户还款金额除以催回金额
+print('催回效果：%.2f'%(sum([int(i['collect_amount']) for i in lis])/sum([int(i['repaid_amount']) for i in lis])))
+#每个催收员的催收次数
+#空字典用于计算
+dic = {}
+#循环每个id
+for i in [i['collector_id'] for i in lis]:
+    #计算每个id存在几次
+    dic[i] = dic.get(i, 0) + 1
+#可视化输出
+print(dic)
